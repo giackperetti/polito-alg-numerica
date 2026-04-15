@@ -1,0 +1,31 @@
+# macOS system files
+.DS_Store
+
+# MATLAB Autosaves
+*.asv
+
+# Compiled MEX files (platform-specific)
+*.mexglx
+*.mexa64
+*.mexmaci64
+*.mexw32
+*.mexw64
+
+# Simulink Generation and Cache
+slprj/
+*.slxc
+*.mldatx
+*.sdat
+
+# App Designer and Toolboxes
+*.mlappinstall
+*.mltbx
+
+# Workspace data
+# Only ignore .mat files if they are generated outputs or large datasets.
+# If you have small configuration .mat files, do not ignore them.
+*.mat
+
+# Logs and Crash Reports
+java.log.*
+matlab_crash_dump.*
