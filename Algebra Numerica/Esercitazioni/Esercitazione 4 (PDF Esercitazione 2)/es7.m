@@ -1,10 +1,12 @@
 clear;
 clc;
 
-x = linspace(0, pi, 15)';
+n = 15;
+
+x = linspace(0, pi, n)';
 y = x .* cos(x);
 
-A = [x.^2, x, ones(15, 1)];
+A = [x.^2, x, ones(n, 1)];
 
 [Q, R] = qr(A);
 
