@@ -8,7 +8,7 @@ function x = gauss_noscambi(A,b)
             A (i,k) = A (i,k)/A(k,k);
             for j = k+1:n
                 % modifico gli elementi sulla riga con il moltiplicatore
-                A(i, j) = A(i, j) - A(i,k) * A(k, j) ;
+                A(i, j) = A(i, j) - A(i,k) * A(k, j);
             end
             % modifico gli elementi nei termini noti con il moltiplicatore
             b(i) = b(i)- A(i,k) * b(k);
