@@ -5,7 +5,7 @@ function x = gauss_noscambi(A,b)
         for i = k+1:n
             % calcolo il moltiplicatore dividendo l'elemento della riga
             % corrente con l'elemento sulla diagonale
-            A (i,k) = A (i,k)/A(k,k);
+            A(i,k) = A (i,k)/A(k,k);
             for j = k+1:n
                 % modifico gli elementi sulla riga con il moltiplicatore
                 A(i, j) = A(i, j) - A(i,k) * A(k, j);
