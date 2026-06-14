@@ -10,5 +10,5 @@ function [L,U] = elleu(A)
     end
 
     L = tril(A,-1)+eye(n);
-    U = tril(A);
+    U = triu(A);
 end
